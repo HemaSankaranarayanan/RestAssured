@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Hema.restassured.RestAssuredTestNGTests">
+      <class name="Hema.restassured.ApartmentTest">
         <methods>
-          <include name="getLandLords"/>
           <include name="initialize"/>
-          <include name="failTest"/>
-          <include name="postLandLordWithErrors1"/>
+          <include name="postApartment"/>
+          <include name="postLandLord"/>
         </methods>
-      </class> <!-- Hema.restassured.RestAssuredTestNGTests -->
+      </class> <!-- Hema.restassured.ApartmentTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

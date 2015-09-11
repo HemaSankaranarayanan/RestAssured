@@ -1,39 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="10" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1441" started-at="2015-09-09T20:35:44Z" finished-at="2015-09-09T20:35:45Z">
+  <suite name="Default suite" duration-ms="1297" started-at="2015-09-11T21:37:53Z" finished-at="2015-09-11T21:37:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1441" started-at="2015-09-09T20:35:44Z" finished-at="2015-09-09T20:35:45Z">
-      <class name="Hema.restassured.RestAssuredTestNGTests">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:Hema.restassured.RestAssuredTestNGTests@35851384]" name="initialize" is-config="true" duration-ms="278" started-at="2015-09-09T13:35:44Z" finished-at="2015-09-09T13:35:44Z">
+    <test name="Default test" duration-ms="1297" started-at="2015-09-11T21:37:53Z" finished-at="2015-09-11T21:37:55Z">
+      <class name="Hema.restassured.ApartmentTest">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:Hema.restassured.ApartmentTest@725bef66]" name="initialize" is-config="true" duration-ms="230" started-at="2015-09-11T14:37:53Z" finished-at="2015-09-11T14:37:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="postLandLord1(Hema.restassured.LandLord)[pri:0, instance:Hema.restassured.RestAssuredTestNGTests@35851384]" name="postLandLord1" duration-ms="1085" started-at="2015-09-09T13:35:44Z" data-provider="landlordnames" finished-at="2015-09-09T13:35:45Z">
+        <test-method status="PASS" signature="postLandLord()[pri:0, instance:Hema.restassured.ApartmentTest@725bef66]" name="postLandLord" duration-ms="872" started-at="2015-09-11T14:37:54Z" finished-at="2015-09-11T14:37:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postLandLord -->
+        <test-method status="PASS" signature="postApartment()[pri:0, instance:Hema.restassured.ApartmentTest@725bef66]" name="postApartment" duration-ms="95" started-at="2015-09-11T14:37:54Z" depends-on-methods="Hema.restassured.ApartmentTest.postLandLord" finished-at="2015-09-11T14:37:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postApartment -->
+        <test-method status="PASS" signature="postApartmentSet(Hema.restassured.Apartment)[pri:0, instance:Hema.restassured.ApartmentTest@725bef66]" name="postApartmentSet" duration-ms="11" started-at="2015-09-11T14:37:55Z" data-provider="apartment list" depends-on-methods="Hema.restassured.ApartmentTest.postLandLord" finished-at="2015-09-11T14:37:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Hema.restassured.LandLord@2473d930]]>
+                <![CDATA[Hema.restassured.Apartment@2ca47471]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- postLandLord1 -->
-        <test-method status="PASS" signature="postLandLord1(Hema.restassured.LandLord)[pri:0, instance:Hema.restassured.RestAssuredTestNGTests@35851384]" name="postLandLord1" duration-ms="69" started-at="2015-09-09T13:35:45Z" data-provider="landlordnames" finished-at="2015-09-09T13:35:45Z">
+        </test-method> <!-- postApartmentSet -->
+        <test-method status="PASS" signature="postApartmentSet(Hema.restassured.Apartment)[pri:0, instance:Hema.restassured.ApartmentTest@725bef66]" name="postApartmentSet" duration-ms="11" started-at="2015-09-11T14:37:55Z" data-provider="apartment list" depends-on-methods="Hema.restassured.ApartmentTest.postLandLord" finished-at="2015-09-11T14:37:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Hema.restassured.LandLord@b93aad]]>
+                <![CDATA[Hema.restassured.Apartment@5489c777]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- postLandLord1 -->
-      </class> <!-- Hema.restassured.RestAssuredTestNGTests -->
+        </test-method> <!-- postApartmentSet -->
+        <test-method status="PASS" signature="postApartmentSet(Hema.restassured.Apartment)[pri:0, instance:Hema.restassured.ApartmentTest@725bef66]" name="postApartmentSet" duration-ms="11" started-at="2015-09-11T14:37:55Z" data-provider="apartment list" depends-on-methods="Hema.restassured.ApartmentTest.postLandLord" finished-at="2015-09-11T14:37:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Hema.restassured.Apartment@72efb5c1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postApartmentSet -->
+        <test-method status="PASS" signature="postApartmentSet(Hema.restassured.Apartment)[pri:0, instance:Hema.restassured.ApartmentTest@725bef66]" name="postApartmentSet" duration-ms="13" started-at="2015-09-11T14:37:55Z" data-provider="apartment list" depends-on-methods="Hema.restassured.ApartmentTest.postLandLord" finished-at="2015-09-11T14:37:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Hema.restassured.Apartment@7a0e1b5e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postApartmentSet -->
+        <test-method status="PASS" signature="postApartmentSet(Hema.restassured.Apartment)[pri:0, instance:Hema.restassured.ApartmentTest@725bef66]" name="postApartmentSet" duration-ms="11" started-at="2015-09-11T14:37:55Z" data-provider="apartment list" depends-on-methods="Hema.restassured.ApartmentTest.postLandLord" finished-at="2015-09-11T14:37:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Hema.restassured.Apartment@649f2009]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postApartmentSet -->
+        <test-method status="PASS" signature="postApartmentSet(Hema.restassured.Apartment)[pri:0, instance:Hema.restassured.ApartmentTest@725bef66]" name="postApartmentSet" duration-ms="13" started-at="2015-09-11T14:37:55Z" data-provider="apartment list" depends-on-methods="Hema.restassured.ApartmentTest.postLandLord" finished-at="2015-09-11T14:37:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Hema.restassured.Apartment@c1fca1e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postApartmentSet -->
+        <test-method status="PASS" signature="postApartmentSet(Hema.restassured.Apartment)[pri:0, instance:Hema.restassured.ApartmentTest@725bef66]" name="postApartmentSet" duration-ms="8" started-at="2015-09-11T14:37:55Z" data-provider="apartment list" depends-on-methods="Hema.restassured.ApartmentTest.postLandLord" finished-at="2015-09-11T14:37:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Hema.restassured.Apartment@3aacf32a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postApartmentSet -->
+        <test-method status="PASS" signature="postApartmentSet(Hema.restassured.Apartment)[pri:0, instance:Hema.restassured.ApartmentTest@725bef66]" name="postApartmentSet" duration-ms="9" started-at="2015-09-11T14:37:55Z" data-provider="apartment list" depends-on-methods="Hema.restassured.ApartmentTest.postLandLord" finished-at="2015-09-11T14:37:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Hema.restassured.Apartment@77b7ffa4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postApartmentSet -->
+      </class> <!-- Hema.restassured.ApartmentTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
